@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="images/logo.png" alt="Bilimly Logo" width="120" />
+<img src="https://www.bilimly.app/assets/images/logo/logo-5.svg" alt="Bilimly Logo" width="120" />
 
 # Bilimly
 
