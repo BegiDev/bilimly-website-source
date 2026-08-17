@@ -128,7 +128,7 @@ The roadmap adapts as you progress — always showing you the most relevant next
 ## 🛠️ Tech Stack
 
 ```
-Mobile:      iOS · Android (Mobile-first)
+Mobile:      iOS · Android (Flutter)
 Frontend:    HTML5 · CSS3 · JavaScript
 AI Layer:    Anthropic Claude API (AI Roadmap)
 Offline:     Service Workers / Local Storage
@@ -151,8 +151,8 @@ Before you begin, make sure you have:
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/BegiDev/Bilimly-demo-code.git
-cd Bilimly-demo-code
+git clone https://github.com/BegiDev/bilimly-website-source.git
+cd bilimly-website-source
 ```
 
 **2. Launch the demo**
