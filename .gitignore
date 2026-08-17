@@ -1,0 +1,16 @@
+node_modules/
+dist/
+assets/js/dist/
+.env
+.env.*
+!.env.example
+assets/js/src/config.js
+
+.env
+.env.*
+!.env.example
+
+# Local backup files
+*.backup.js
+*.bak
+*.old

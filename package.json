@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "npm run build:watch",
+    "build": "rm -rf dist && mkdir -p dist && cp -R assets dist/assets && cp -R course dist/course && cp -R delete-account dist/delete-account && cp -R privacy-policy dist/privacy-policy && cp favicon.ico lang.json index.html course.html auth.html dist/ && node build.mjs",
+    "build:watch": "esbuild assets/js/src/index-page.js assets/js/src/course-page.js --bundle --minify --platform=browser --outdir=assets/js/dist --watch"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "esbuild": "^0.24.2"
+  },
+  "devDependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

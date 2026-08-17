@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bilimly Team">
+    <meta name="description"
+        content="Bilimly - AI asoslangan STEM va sun'iy intellekt ta'lim platformasi. Interaktiv darslar va AI Student yordamida bilimlaringizni mustahkamlang.">
+    <meta name="keywords"
+        content="Bilimly, STEM, AI, ta'lim, interaktiv o'rganish, AI Student, EdTech, ta'lim ilovasi, o'quv platforma, bilim mustahkamlash, amaliy mashg'ulotlar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Bilimly - AI asoslangan STEM va AI ta'lim platformasi">
+    <meta property="og:description"
+        content="Interaktiv darslar orqali STEM va AI mavzularini o'rganing va AI Student yordamida bilimlaringizni mustahkamlang.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bilimly.app/">
+    <meta property="og:image" content="https://www.bilimly.app/assets/images/logo/logo-5.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bilimly - AI asoslangan STEM va AI ta'lim platformasi">
+    <meta name="twitter:description"
+        content="Interaktiv darslar orqali STEM va AI mavzularini o'rganing va AI Student yordamida bilimlaringizni mustahkamlang.">
+    <meta name="twitter:image" content="https://www.bilimly.app/assets/images/logo/logo-5.svg">
+
+    <!-- Title -->
+    <title data-lang="pageTitle">Bilimly - O`rgatib o`rgan, o`rganib o`rgat!</title>
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/images/logo/logo-5.svg">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/logo-5.svg" type="image/x-icon">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+
+    <!-- Main / Theme -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/theme-dark.css">
+    <style>
+        .auth-modal {
+            color-scheme: dark;
+        }
+
+        .auth-modal .auth-tabs {
+            border: 1px solid rgba(var(--color-primary-rgb), 0.25);
+            border-radius: 999px;
+            padding: 6px;
+            gap: 6px;
+            background: rgba(var(--color-white-rgb), 0.06);
+            box-shadow: inset 0 0 0 1px rgba(var(--color-white-rgb), 0.08);
+            display: flex;
+        }
+
+        .auth-modal .auth-tabs .nav-item {
+            flex: 1 1 0;
+        }
+
+        .auth-modal .auth-tabs .nav-link {
+            border-radius: 999px;
+            font-weight: 600;
+            padding: 8px 18px;
+            color: rgba(var(--color-white-rgb), 0.75);
+            background: transparent;
+            border: 1px solid transparent;
+            transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            width: 100%;
+            text-align: center;
+        }
+
+        .auth-modal .auth-tabs .nav-link:hover {
+            color: var(--text-white);
+            border-color: rgba(var(--color-primary-rgb), 0.25);
+        }
+
+        .auth-modal .auth-tabs .nav-link.active {
+            background: linear-gradient(135deg, var(--color-primary), #f43f5e);
+            color: var(--text-white);
+            box-shadow: 0 12px 30px rgba(var(--color-primary-rgb), 0.35);
+            border-color: transparent;
+        }
+
+        .auth-modal .form-control,
+        .auth-modal .form-control:focus,
+        .auth-modal input.form-control,
+        .auth-modal textarea.form-control,
+        .auth-modal select.form-control {
+            background-color: var(--bg-white);
+            color: var(--text-white);
+            border-color: rgba(var(--color-white-rgb), 0.14);
+            background-clip: padding-box;
+            box-shadow: inset 0 0 0 1000px var(--bg-white);
+            -webkit-appearance: none;
+        }
+
+        .auth-modal .form-control:focus {
+            border-color: rgba(var(--color-primary-rgb), 0.7);
+            box-shadow: 0 0 0 0.15rem rgba(var(--color-primary-rgb), 0.2);
+        }
+
+        .auth-modal input:-webkit-autofill,
+        .auth-modal input:-webkit-autofill:hover,
+        .auth-modal input:-webkit-autofill:focus {
+            -webkit-text-fill-color: var(--text-white);
+            box-shadow: 0 0 0px 1000px var(--bg-white) inset;
+            border-color: rgba(var(--color-white-rgb), 0.14);
+        }
+
+        .auth-modal .form-control::placeholder {
+            color: rgba(var(--color-white-rgb), 0.6);
+        }
+
+        .auth-modal .auth-google-btn {
+            background: #ffffff;
+            color: #111827;
+            border: 1px solid rgba(17, 24, 39, 0.15);
+        }
+
+        .auth-modal .auth-google-btn:hover {
+            background: #f4f4f5;
+            color: #111827;
+        }
+
+        .toast-stack {
+            position: fixed;
+            top: 90px;
+            right: 24px;
+            z-index: 2200;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            pointer-events: none;
+        }
+
+        .toast-item {
+            min-width: 240px;
+            max-width: 320px;
+            background: rgba(10, 11, 28, 0.95);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-left: 4px solid rgba(var(--color-primary-rgb), 0.8);
+            border-radius: 12px;
+            padding: 12px 14px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+            transform: translateX(20px);
+            opacity: 0;
+            animation: toast-in 0.25s ease forwards;
+            pointer-events: auto;
+        }
+
+        .toast-item.is-success {
+            border-left-color: #22c55e;
+        }
+
+        .toast-item.is-error {
+            border-left-color: #f43f5e;
+        }
+
+        .toast-item.is-info {
+            border-left-color: #38bdf8;
+        }
+
+        @keyframes toast-in {
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .course-topbar {
+            padding: 20px 0 0;
+        }
+
+        .topbar-menu {
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .topbar-menu .menu-panel {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: rgba(10, 11, 28, 0.96);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 10px;
+            min-width: 160px;
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+            opacity: 0;
+            transform: translateY(6px);
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            z-index: 10;
+        }
+
+        .topbar-menu.open .menu-panel {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .notice-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(var(--color-primary-rgb), 0.35);
+            color: var(--color-primary);
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            box-shadow: 0 10px 24px rgba(var(--color-primary-rgb), 0.25);
+            position: relative;
+        }
+
+        .notice-icon::after {
+            content: "";
+            position: absolute;
+            inset: -10px;
+            border-radius: 50%;
+            border: 2px solid rgba(var(--color-primary-rgb), 0.35);
+            animation: notice-ripple 2.4s ease-out infinite;
+        }
+
+        @keyframes notice-ripple {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.65;
+            }
+            70% {
+                transform: scale(1.3);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1.3);
+                opacity: 0;
+            }
+        }
+
+        .course-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .refresh-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(var(--color-primary-rgb), 0.7);
+            background: linear-gradient(135deg, rgba(var(--color-primary-rgb), 0.3), rgba(244, 63, 94, 0.25));
+            color: var(--text-white);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 18px rgba(var(--color-primary-rgb), 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .refresh-btn:hover {
+            transform: translateY(-2px) rotate(15deg);
+            box-shadow: 0 12px 24px rgba(var(--color-primary-rgb), 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+        }
+
+        .refresh-fab {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            z-index: 2;
+        }
+
+        .refresh-fab::after {
+            content: "";
+            position: absolute;
+            inset: -6px;
+            border-radius: 50%;
+            border: 2px solid rgba(var(--color-primary-rgb), 0.6);
+            animation: refresh-ripple 2.2s ease-out infinite;
+        }
+
+        @keyframes refresh-ripple {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.65;
+            }
+            70% {
+                transform: scale(1.25);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1.25);
+                opacity: 0;
+            }
+        }
+
+        .course-ribbon {
+            position: absolute;
+            top: 18px;
+            right: -48px;
+            width: 170px;
+            padding: 6px 0;
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: #ffffff;
+            box-shadow: 0 10px 22px rgba(34, 197, 94, 0.35);
+            transform: rotate(45deg);
+        }
+
+        .auth-loading {
+            position: fixed;
+            inset: 0;
+            background: rgba(6, 8, 20, 0.7);
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+        }
+
+        .auth-loading.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .auth-loading .spinner {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            border-top-color: #ffffff;
+            animation: auth-spin 0.9s linear infinite;
+        }
+
+        @keyframes auth-spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .auth-modal .tab-content {
+            min-height: 420px;
+        }
+
+        .payme-modal .modal-content {
+            background: rgba(10, 11, 28, 0.98);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #ffffff;
+        }
+
+        .payme-modal .modal-header,
+        .payme-modal .modal-footer {
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .payme-modal .modal-body {
+            padding: 20px;
+        }
+
+        @media (max-width: 991.98px) {
+            .auth-modal .tab-content {
+                min-height: 380px;
+            }
+        }
+    </style>
+</head>
+
+<body class="body-dark theme-color-4">
+    <!-- Preloader start -->
+    <div id="preLoader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- Header-area start -->
+    <header class="header-area d-none" data-aos="fade-down">
+        <!-- Start mobile menu -->
+        <div class="mobile-menu">
+            <div class="container">
+                <div class="mobile-menu-wrapper"></div>
+            </div>
+        </div>
+        <!-- End mobile menu -->
+
+        <div class="main-responsive-nav">
+            <div class="container">
+                <!-- Mobile Logo -->
+                <div class="logo">
+                    <a href="index.html" target="_self" title="Bilimly">
+                        <img src="assets/images/logo/logo-5.svg" class="logo-img" alt="Bilimly logo">
+                    </a>
+                </div>
+
+                <!-- Menu toggle button -->
+                <button class="menu-toggler" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="main-navbar">
+            <div class="container-fluid container-custom">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="more-option mobile-item">
+                        <div class="social-link style-2">
+                            <a href="https://www.instagram.com/bilimly.app/" target="_blank" title="Link"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.x.com/" target="_blank" title="X (Twitter)">
+                                <i class="fab fa-x"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" title="Link"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <!-- Navigation items -->
+                    <div class="collapse navbar-collapse">
+                        <ul id="mainMenu" class="navbar-nav mobile-item mx-auto align-items-xl-center">
+                            <li class="nav-item">
+                                <a href="index.html#about" class="nav-link toggle" data-lang="navBilimly">Bilimly</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="index.html#rasm" data-lang="navImages">Rasmlar</a>
+                            </li>
+                            <li class="nav-item logo">
+                                <a class="navbar-brand nav-link" href="#" target="_self" title="Bilimly">
+                                    <img src="assets/images/logo/logo-5.svg" alt="Brand Logo">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#fikr" data-lang="navReviews">Fikrlar</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aloqa" data-lang="navContact">Aloqa</a>
+                            </li>
+                            <li class="nav-item d-xl-none mt-2">
+                                <button type="button"
+                                    class="btn btn-sm btn-primary bg-gradient rounded-pill w-100"
+                                    data-bs-toggle="modal" data-bs-target="#authModal" data-lang="navAuth">
+                                    Kirish / Ro'yxatdan o'tish
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </nav>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <button type="button" class="btn btn-sm btn-primary bg-gradient rounded-pill"
+                        data-bs-toggle="modal" data-bs-target="#authModal" data-lang="navAuth">
+                        Kirish / Ro'yxatdan o'tish
+                    </button>
+                    <div class="lang-dropdown">
+                        <button class="lang-current" id="langToggle">
+                            <span id="current-lang">UZ</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </button>
+
+                        <div class="lang-menu">
+                            <button class="lang-btn active" data-lang="uz">UZ</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                            <button class="lang-btn" data-lang="ru">RU</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- Header-area end -->
+
+    <div class="course-topbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <button type="button" id="backBtn" class="btn btn-sm btn-outline-light rounded-pill">
+                <i class="fa-solid fa-arrow-left me-2"></i>
+                <span data-lang="backHome">Bosh sahifa</span>
+            </button>
+            <div class="topbar-menu" id="topbarMenu">
+                <button type="button" id="menuToggle" class="btn btn-sm btn-outline-light rounded-pill">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <div class="menu-panel">
+                    <button type="button" id="logoutBtn" class="btn btn-sm btn-outline-light rounded-pill w-100"
+                        data-lang="authLogout">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses area start -->
+    <section id="course-list" class="course-area pt-40 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title title-center mb-30" data-aos="fade-up">
+                        <h1 class="title mb-10" data-lang="coursePageNoticeTitle">
+                            Uzcard bilan to'lov uchun kurslar
+                        </h1>
+                        <p class="text">
+                            <span class="notice-icon me-2" aria-hidden="true">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </span>
+                            <span data-lang="coursePageNoticeText">
+                                Xarid qilingan kurslar mobil ilovada ochiladi. Bu sahifa Uzcard bilan to'lov qilish
+                                uchun mo'ljallangan (ko'pincha iPhone foydalanuvchilari uchun).
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title title-center mb-30" data-aos="fade-up">
+                        <h2 class="title" data-lang="coursesTitle">Our Courses</h2>
+                        <p class="text" data-lang="coursesText">Choose from our curated courses to level up your skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="coursesGrid" data-aos="fade-up">
+                <!-- Cards will be injected here by JavaScript -->
+            </div>
+
+            <div id="coursesEmpty" class="text-center mt-4 d-none">
+                <p class="text">No courses available yet.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Courses area end -->
+
+<!-- Footer-area start -->
+    <footer class="footer-area bg-primary-light radius-0 d-none" id="aloqa">
+        <div class="footer-top pt-100 pb-70">
+            <div class="container">
+                <div class="row justify-content-between">
+
+                    <!-- Logo va qisqacha tavsif -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="100">
+                            <div class="navbar-brand">
+                                <a href="index.html" target="_self" title="Bilimly">
+                                    <img class="lazyload blur-up" src="assets/images/placeholder.png"
+                                        data-src="assets/images/logo/logo-5.svg" alt="Bilimly Logo">
+                                </a>
+                            </div>
+                            <p data-lang="footerAbout">
+                                Bilimly orqali qiyin STEM va AI mavzularini
+                                interaktiv va amaliy tarzda o'rganing.
+                                AI Student bilimlaringizni mustahkamlashga yordam beradi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Foydali linklar -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="200">
+                            <h5 data-lang="footerLinks">Foydali Havolalar</h5>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#" target="_self" title="Download App" data-lang="footerDownload">
+                                        App yuklab olish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/docs/Bilimly_ommafiy_oferta.pdf" target="_blank"
+                                        title="Bilimly ommaviy oferta" data-lang="footerOffer">
+                                        Ommaviy oferta (PDF)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/docs/bilimly_refund_policy.pdf" target="_blank"
+                                        title="Bilimly refund policy" data-lang="footerRefund">
+                                        Pulni qaytarish siyosati (PDF)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Aloqa -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="200">
+                            <h5 data-lang="footerContact">Aloqa uchun</h5>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="tel:+998932071332">+998 93 207 13 32</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+998500221571">+998 50 022 15 71</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- App yuklab olish -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="200">
+                            <h5 data-lang="footerAppDownload">Appni yuklab oling</h5>
+                            <div class="btn-groups">
+                                <a href="#" class="btn btn-img radius-sm size-sm" title="App Store" target="_blank">
+                                    <img class="lazyload blur-up" src="assets/images/placeholder.png"
+                                        data-src="assets/images/app-store.png" alt="App Store">
+                                </a>
+                                <a href="#" class="btn btn-img radius-sm size-sm" title="Play Store" target="_blank">
+                                    <img class="lazyload blur-up" src="assets/images/placeholder.png"
+                                        data-src="assets/images/play-store.png" alt="Play Store">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Social & Copyright -->
+        <div class="copy-right-area border-top ptb-30">
+            <div class="container">
+                <div class="social-link">
+                    <a href="https://www.instagram.com/bilimly.app/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.x.com/" target="_blank" title="X (Twitter)">
+                        <i class="fab fa-x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube    "></i>
+                    </a>
+                </div>
+
+                <div class="copy-right-content mt-20">
+                    <span>
+                        © <span id="footerDate"></span>
+                        <a href="#" class="color-primary">Bilimly</a>.
+                        <span data-lang="copyright">Barcha huquqlar himoyalangan.</span>
+                    </span>
+
+                    <script>
+                        document.getElementById("footerDate").textContent = new Date().getFullYear();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("footerDate").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Footer-area end-->
+    <!-- Go to Top -->
+    <div class="go-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <!-- Go to Top -->
+    <div id="authLoading" class="auth-loading" aria-live="polite" aria-busy="true">
+        <div class="spinner" role="status" aria-label="Loading"></div>
+    </div>
+    <div id="toastStack" class="toast-stack" aria-live="polite" aria-atomic="true"></div>
+
+    <div class="modal fade payme-modal" id="paymeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Payme</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-0 text-secondary">
+                        Payme sahifasi brauzer xavfsizlik cheklovlari sababli bu oynada ochilmaydi.
+                        Pastdagi tugma orqali yangi oynada oching va to'lovni yakunlang.
+                    </p>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" id="paymeCheckBtn"
+                        class="btn btn-sm btn-warning rounded-pill text-dark">
+                        Tekshirish
+                    </button>
+                    <a id="paymeOpenLink" class="btn btn-sm btn-primary bg-gradient rounded-pill" href="#"
+                        target="_blank" rel="noopener noreferrer">
+                        Payme ochish
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS -->
+    <script src="assets/js/vendors/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Counter JS -->
+    <script src="assets/js/vendors/jquery.counterup.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/vendors/jquery.nice-select.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <!-- Lazysizes -->
+    <script src="assets/js/vendors/lazysizes.min.js"></script>
+    <!-- Twinmax JS -->
+    <script src="assets/js/vendors/tweenMax.min.js"></script>
+    <!-- Tilt JS -->
+    <script src="assets/js/vendors/tilt.jquery.min.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/js/vendors/aos.min.js"></script>
+    <!-- Main script JS -->
+    <script src="assets/js/script.js"></script>
+    <!-- Language data (local fallback for file://) -->
+    <script src="assets/js/lang-data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1/dist/umd/supabase.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+    <script src="../assets/js/dist/course-page.js?v=2"></script>
+</body>
+
+</html>

@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bilimly Team">
+    <meta name="description"
+        content="Bilimly - AI asoslangan STEM va sun'iy intellekt ta'lim platformasi. Interaktiv darslar va AI Student yordamida bilimlaringizni mustahkamlang.">
+    <meta name="keywords"
+        content="Bilimly, STEM, AI, ta'lim, interaktiv o'rganish, AI Student, EdTech, ta'lim ilovasi, o'quv platforma, bilim mustahkamlash, amaliy mashg'ulotlar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Bilimly - AI asoslangan STEM va AI ta'lim platformasi">
+    <meta property="og:description"
+        content="Interaktiv darslar orqali STEM va AI mavzularini o'rganing va AI Student yordamida bilimlaringizni mustahkamlang.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bilimly.app/">
+    <meta property="og:image" content="https://www.bilimly.app/assets/images/logo/logo-5.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bilimly - AI asoslangan STEM va AI ta'lim platformasi">
+    <meta name="twitter:description"
+        content="Interaktiv darslar orqali STEM va AI mavzularini o'rganing va AI Student yordamida bilimlaringizni mustahkamlang.">
+    <meta name="twitter:image" content="https://www.bilimly.app/assets/images/logo/logo-5.svg">
+
+    <!-- Title -->
+    <title data-lang="pageTitle">Bilimly - O`rgatib o`rgan, o`rganib o`rgat!</title>
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/images/logo/logo-5.svg">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/logo-5.svg" type="image/x-icon">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+
+    <!-- Main / Theme -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/theme-dark.css">
+    <style>
+        .auth-modal {
+            color-scheme: dark;
+        }
+
+        .auth-modal .auth-tabs {
+            border: 1px solid rgba(var(--color-primary-rgb), 0.25);
+            border-radius: 999px;
+            padding: 6px;
+            gap: 6px;
+            background: rgba(var(--color-white-rgb), 0.06);
+            box-shadow: inset 0 0 0 1px rgba(var(--color-white-rgb), 0.08);
+            display: flex;
+        }
+
+        .auth-modal .auth-tabs .nav-item {
+            flex: 1 1 0;
+        }
+
+        .auth-modal .auth-tabs .nav-link {
+            border-radius: 999px;
+            font-weight: 600;
+            padding: 8px 18px;
+            color: rgba(var(--color-white-rgb), 0.75);
+            background: transparent;
+            border: 1px solid transparent;
+            transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            width: 100%;
+            text-align: center;
+        }
+
+        .auth-modal .auth-tabs .nav-link:hover {
+            color: var(--text-white);
+            border-color: rgba(var(--color-primary-rgb), 0.25);
+        }
+
+        .auth-modal .auth-tabs .nav-link.active {
+            background: linear-gradient(135deg, var(--color-primary), #f43f5e);
+            color: var(--text-white);
+            box-shadow: 0 12px 30px rgba(var(--color-primary-rgb), 0.35);
+            border-color: transparent;
+        }
+
+        .auth-modal .form-control,
+        .auth-modal .form-control:focus,
+        .auth-modal input.form-control,
+        .auth-modal textarea.form-control,
+        .auth-modal select.form-control {
+            background-color: var(--bg-white);
+            color: var(--text-white);
+            border-color: rgba(var(--color-white-rgb), 0.14);
+            background-clip: padding-box;
+            box-shadow: inset 0 0 0 1000px var(--bg-white);
+            -webkit-appearance: none;
+        }
+
+        .auth-modal .form-control:focus {
+            border-color: rgba(var(--color-primary-rgb), 0.7);
+            box-shadow: 0 0 0 0.15rem rgba(var(--color-primary-rgb), 0.2);
+        }
+
+        .auth-modal input:-webkit-autofill,
+        .auth-modal input:-webkit-autofill:hover,
+        .auth-modal input:-webkit-autofill:focus {
+            -webkit-text-fill-color: var(--text-white);
+            box-shadow: 0 0 0px 1000px var(--bg-white) inset;
+            border-color: rgba(var(--color-white-rgb), 0.14);
+        }
+
+        .auth-modal .form-control::placeholder {
+            color: rgba(var(--color-white-rgb), 0.6);
+        }
+
+        .auth-modal .auth-google-btn {
+            background: #ffffff;
+            color: #111827;
+            border: 1px solid rgba(17, 24, 39, 0.15);
+        }
+
+        .auth-modal .auth-google-btn:hover {
+            background: #f4f4f5;
+            color: #111827;
+        }
+
+        .auth-loading {
+            position: fixed;
+            inset: 0;
+            background: rgba(6, 8, 20, 0.7);
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+        }
+
+        .auth-loading.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .auth-loading .spinner {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            border-top-color: #ffffff;
+            animation: auth-spin 0.9s linear infinite;
+        }
+
+        @keyframes auth-spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .auth-modal .tab-content {
+            min-height: 420px;
+        }
+
+        @media (max-width: 991.98px) {
+            .auth-modal .tab-content {
+                min-height: 380px;
+            }
+        }
+    </style>
+</head>
+
+<body class="body-dark theme-color-4">
+    <!-- Preloader start -->
+    <div id="preLoader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- Header-area start -->
+    <header class="header-area" data-aos="fade-down">
+        <!-- Start mobile menu -->
+        <div class="mobile-menu">
+            <div class="container">
+                <div class="mobile-menu-wrapper"></div>
+            </div>
+        </div>
+        <!-- End mobile menu -->
+
+        <div class="main-responsive-nav">
+            <div class="container">
+                <!-- Mobile Logo -->
+                <div class="logo">
+                    <a href="index.html" target="_self" title="Bilimly">
+                        <img src="assets/images/logo/logo-5.svg" class="logo-img" alt="Bilimly logo">
+                    </a>
+                </div>
+
+                <!-- Menu toggle button -->
+                <button class="menu-toggler" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="main-navbar">
+            <div class="container-fluid container-custom">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="more-option mobile-item">
+                        <div class="social-link style-2">
+                            <a href="https://www.instagram.com/bilimly.app/" target="_blank" title="Link"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.x.com/" target="_blank" title="X (Twitter)">
+                                <i class="fab fa-x"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" title="Link"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <!-- Navigation items -->
+                    <div class="collapse navbar-collapse">
+                        <ul id="mainMenu" class="navbar-nav mobile-item mx-auto align-items-xl-center">
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link toggle" data-lang="navBilimly">Bilimly</i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#rasm" data-lang="navImages">Rasmlar </i></a>
+                            </li>
+                            <li class="nav-item logo">
+                                <a class="navbar-brand nav-link" href="#" target="_self" title="Bilimly">
+                                    <img src="assets/images/logo/logo-5.svg" alt="Brand Logo">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#fikr" data-lang="navReviews">Fikrlar</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aloqa" data-lang="navContact">Aloqa</a>
+                            </li>
+                            <li class="nav-item d-xl-none mt-2">
+                                <button type="button" class="btn btn-sm btn-primary bg-gradient rounded-pill w-100"
+                                    data-bs-toggle="modal" data-bs-target="#authModal" data-lang="navAuth"
+                                    data-auth-action="true">
+                                    Kirish / Ro'yxatdan o'tish
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                        <button type="button" class="btn btn-sm btn-primary bg-gradient rounded-pill"
+                            data-bs-toggle="modal" data-bs-target="#authModal" data-lang="navAuth"
+                            data-auth-action="true">
+                            Kirish / Ro'yxatdan o'tish
+                        </button>
+                        <div class="lang-dropdown">
+                            <button class="lang-current" id="langToggle">
+                                <span id="current-lang">UZ</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24">
+                                    <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </button>
+
+                            <div class="lang-menu">
+                                <button class="lang-btn active" data-lang="uz">UZ</button>
+                                <button class="lang-btn" data-lang="en">EN</button>
+                                <button class="lang-btn" data-lang="ru">RU</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <!-- Header-area end -->
+
+    <!-- Home-area start-->
+    <section class="hero-banner hero-banner-4" id="about">
+        <div class="container">
+            <div class="row align-items-center gx-xl-5">
+                <div class="col-lg-6">
+                    <div class="banner-content mb-40">
+                        <h1 class="title mb-30" data-aos="fade-up" data-aos-delay="100" data-lang="heroTitle">
+                            O`rgatib o`rgan, o`rganib o`rgat!
+                        </h1>
+                        <p class="text" data-aos="fade-up" data-aos-delay="100" data-lang="heroText">
+                            STEM va AI mavzularini amaliy va interaktiv tarzda o'rganing, AI Student bilan real vaqtda
+                            bilimlaringizni baholang.
+                        </p>
+                        <div class="cta-btn mt-40 btn-groups aos-init aos-animate" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <a href="https://apps.apple.com/ru/app/bilimly/id6756845318" class="btn btn-img radius-md"
+                                title="App Store" target="_blank">
+                                <img class="blur-up lazyloaded" src="assets/images/app-store.png"
+                                    data-src="assets/images/app-store.png" alt="App Store">
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.bilimly.app"
+                                class="btn btn-img radius-md" title="Play Store" target="_blank">
+                                <img class="blur-up lazyloaded" src="assets/images/play-store.png"
+                                    data-src="assets/images/play-store.png" alt="App Store">
+                            </a>
+                        </div>
+                        <div class="clients-avatar mt-40 aos-init aos-animate" data-aos="fade-up" data-aos-delay="250">
+                            <div class="client-img">
+                                <img class="blur-up lazyloaded" src="assets/images/avatar-1.jpg"
+                                    data-src="assets/images/avatar-1.jpg" alt="Client Image">
+                                <img class="blur-up ls-is-cached lazyloaded" src="assets/images/avatar-2.jpg"
+                                    data-src="assets/images/avatar-2.jpg" alt="Client Image">
+                                <img class="blur-up ls-is-cached lazyloaded" src="assets/images/avatar-3.jpg"
+                                    data-src="assets/images/avatar-3.jpg" alt="Client Image">
+                                <img class="blur-up ls-is-cached lazyloaded" src="assets/images/avatar-4.jpg"
+                                    data-src="assets/images/avatar-4.jpg" alt="Client Image">
+                                <span>+10</span>
+                            </div>
+                            <span data-lang="downloadsCount">Yuklanishlar soni: 100+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+                    <div class="banner-image mb-40">
+                        <img class="blur-up lazyloaded" src="assets/images/banner/hero-banner-3.png"
+                            data-src="assets/images/banner/hero-banner-3.png" alt="Banner Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home-area end -->
+
+    <!-- Work-area start -->
+    <section class="work-area">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="col-12">
+                    <div class="section-title title-center mb-20" data-aos="fade-up">
+                        <h2 class="title mb-15" data-lang="workTitle">Bilimly qanday ishlaydi</h2>
+                        <p class="text" data-aos="fade-up" data-aos-delay="100" data-lang="workText">
+                            Interaktiv o'rganish va AI baholash orqali bilimni amaliy tarzda mustahkamlang.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Steps -->
+                <div class="col-12">
+                    <div class="row">
+
+                        <!-- Step 1 -->
+                        <div class="col-sm-6 col-lg-3 item mt-30" data-aos="fade-up">
+                            <div class="card border text-center radius-md pb-10">
+                                <div class="card-icon mx-auto">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </div>
+                                <div class="card-content px-2 ptb-30">
+                                    <h4 data-lang="step1Title">Ilovani yuklab oling</h4>
+                                    <p class="card-text lh-1" data-lang="step1Text">
+                                        App Store yoki Play Market orqali Bilimly ilovasini o'rnating.<br>
+                                    </p>
+                                </div>
+                                <span class="count">01</span>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="col-sm-6 col-lg-3 item mt-30" data-aos="fade-up">
+                            <div class="card border text-center radius-md pb-10">
+                                <div class="card-icon mx-auto">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                </div>
+                                <div class="card-content px-2 ptb-30">
+                                    <h4 data-lang="step2Title">Mavzuni tanlang</h4>
+                                    <p class="card-text lh-1" data-lang="step2Text">
+                                        Qiziqqan STEM yoki AI mavzuingizni tanlab, interaktiv mashg'ulotlarni boshlang.
+                                    </p>
+                                </div>
+                                <span class="count">02</span>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="col-sm-6 col-lg-3 item mt-30" data-aos="fade-up">
+                            <div class="card border text-center radius-md pb-10">
+                                <div class="card-icon mx-auto">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                </div>
+                                <div class="card-content px-2 ptb-30">
+                                    <h4 data-lang="step3Title">AI Student</h4>
+                                    <p class="card-text lh-1" data-lang="step3Text">
+                                        O'rgangan mavzuni AI Student'ga tushuntiring va real vaqt tahlilini oling.
+                                    </p>
+                                </div>
+                                <span class="count">03</span>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="col-sm-6 col-lg-3 item mt-30" data-aos="fade-up">
+                            <div class="card border text-center radius-md pb-10">
+                                <div class="card-icon mx-auto">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div class="card-content px-2 ptb-30">
+                                    <h4 data-lang="step4Title">Natijani oling</h4>
+                                    <p class="card-text lh-1" data-lang="step4Text">
+                                        AI bilim darajangizni baholaydi va rivojlanish uchun aniq tavsiyalar beradi.
+                                    </p>
+                                </div>
+                                <span class="count">04</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work-area end -->
+
+    <!-- Choose-area start -->
+    <section class="choose-area pt-100">
+        <div class="container">
+            <div class="row align-items-center gx-xl-5">
+
+                <!-- Image -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="image mb-40">
+                        <img class="lazyload blur-up radius-md" src="assets/images/placeholder.png"
+                            data-src="assets/images/choose-4.png" alt="Bilimly AI Student App Preview">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="content-title mb-40">
+
+                        <h2 class="title mb-20" data-lang="whyTitle">
+                            Nega aynan Bilimly?
+                        </h2>
+
+                        <div class="content-text">
+                            <p data-lang="whyText1">
+                                Bilimly nazariyani o'qitmaydi — u bilimni amaliyot orqali shakllantiradi.
+                                Darslar maxsus ishlab chiqilgan interaktiv formatda bo'lib,
+                                foydalanuvchi mavzuni bevosita bajarish orqali o'zlashtiradi.
+                            </p>
+
+                            <p data-lang="whyText2">
+                                AI Student o'rgatish uchun emas, balki tushunishni tekshirish uchun yaratilgan.
+                                Siz mavzuni AI'ga tushuntirasiz, u esa bilim darajangizni real vaqt rejimida
+                                tahlil qilib, aniq va foydali xulosa beradi.
+                            </p>
+
+                            <p data-lang="whyText3">
+                                Ilovaning asosiy funksiyalarining <strong>60% bepul</strong>.
+                                To'lovsiz ham interaktiv darslar va mashg'ulotlardan foydalanishingiz mumkin.
+                            </p>
+
+                            <p data-lang="whyText4">
+                                AI Student <strong>offline</strong> holatda ham ishlaydi.
+                                Internet bo'lmagan joylarda ham bilimlaringizni mustahkamlashni davom ettiring.
+                            </p>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex align-items-center flex-wrap gap-25 mt-40" data-aos="fade-up">
+                            <a href="#" class="btn btn-lg btn-primary bg-gradient rounded-pill"
+                                title="Bilimly ilovasini yuklab olish" data-lang="downloadBtn">
+                                Ilovani yuklab olish
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose-area end -->
+
+    <!-- About-area start -->
+    <section class="about-area about-3 ptb-60">
+        <div class="container">
+            <div class="row align-items-center gx-xl-5">
+
+                <!-- Image -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="image mb-40">
+                        <img class="lazyload blur-up radius-md" src="assets/images/about-4.png"
+                            data-src="assets/images/about-4.png" alt="App Preview">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-6 order-lg-first" data-aos="fade-up">
+                    <div class="content-title mb-40">
+
+                        <h2 class="title mb-20" data-lang="learnTitle">
+                            Qiyin mavzularni oson yo'l bilan o'rganing
+                        </h2>
+
+                        <div class="content-text">
+                            <p data-lang="learnText1">
+                                Bizning ilova orqali siz mavzularni interaktiv yo'l bilan o'rganasiz.
+                                Darslar foydalanuvchi uchun tushunarli, qiziqarli va bosqichma-bosqich tuzilgan.
+                            </p>
+
+                            <p data-lang="learnText2">
+                                Bu tizim boshqa joylardagi usullardan farq qiladi: ko'pchilik ilovalarda
+                                birinchi o'rganish keyin mashq qilinadi yoki mashq umuman bo'lmaydi.
+                                Biz esa har bir mavzuda o'rganish va amaliy mashqlarni uyg'unlashtirib,
+                                bilimni mustahkamlashga e'tibor qaratamiz.
+                            </p>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="btn-groups gap-25 mt-20" data-aos="fade-up">
+                            <a href="#" class="btn btn-lg btn-primary bg-gradient rounded-pill"
+                                title="Ilovani yuklab olish" target="_self" data-lang="downloadBtn">
+                                Ilovani yuklab olish
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About-area end -->
+
+    <!-- Screenshot-area start -->
+    <section class="screenshot-area pb-100" id="rasm">
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title title-center mb-50" data-aos="fade-up">
+                        <h2 class="title" data-lang="screenshotsTitle">Bilimly`ni ko'rinishi</h2>
+                    </div>
+                </div>
+                <div class="col-12" data-aos="fade-up">
+                    <div class="swiper screenshot-slider" id="screenshot-slider-4" data-slides-per-view="5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-1.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-2.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-3.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-4.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-5.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-6.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-7.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-8.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-9.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-10.png" alt="Image">
+                            </div>
+                            <div class="swiper-slide radius-lg">
+                                <img class="lazyload" src="assets/images/placeholder.png"
+                                    data-src="assets/images/screen-11.png" alt="Image">
+                            </div>
+                        </div>
+                        <!-- Slider pagination's -->
+                        <div class="swiper-pagination position-static mt-40" id="screenshot-slider-4-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshot-area end -->
+    <!-- Font Awesome link (headga qo'yiladi) -->
+    <section class="counter-area counter-1 pb-10">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="col-12">
+                    <div class="section-title title-center mb-50" data-aos="fade-up">
+                        <h2 class="title mt-0" data-lang="opennessTitle">Bizning Ochiqlik Siyosatimiz</h2>
+                        <p class="text" data-lang="opennessText">Foydalanuvchilarimiz va kurslarimiz bo'yicha shaffof
+                            statistika</p>
+                    </div>
+                </div>
+
+                <!-- Counters -->
+                <div class="col-12">
+                    <div class="row">
+
+                        <!-- Ilovani yuklab olganlar -->
+                        <div class="col-sm-6 col-lg-3 mb-40 border-sm-end" data-aos="fade-up">
+                            <div class="card text-center">
+                                <div class="card-icon mx-auto color-primary mb-20">
+                                    <i class="fa-solid fa-download"></i>
+                                </div>
+                                <div class="card-content">
+                                    <span class="h2 font-medium mb-2"><span class="counter">100</span>+</span>
+                                    <p class="card-text lh-1" data-lang="downloadsLabel">Ilovani yuklab olganlar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sotilgan kurslar -->
+                        <div class="col-sm-6 col-lg-3 mb-40 border-lg-end" data-aos="fade-up">
+                            <div class="card text-center">
+                                <div class="card-icon mx-auto color-primary mb-20">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div class="card-content">
+                                    <span class="h2 font-medium mb-2"><span class="counter">2</span>+</span>
+                                    <p class="card-text lh-1" data-lang="coursesLabel">Sotilgan kurslar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Faol foydalanuvchilar -->
+                        <div class="col-sm-6 col-lg-3 mb-40 border-sm-end" data-aos="fade-up">
+                            <div class="card text-center">
+                                <div class="card-icon mx-auto color-primary mb-20">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <div class="card-content">
+                                    <span class="h2 font-medium mb-2"><span class="counter">76</span>+</span>
+                                    <p class="card-text lh-1" data-lang="activeUsersLabel">Faol foydalanuvchilar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Foydalanuvchi mamlakatlari -->
+                        <div class="col-sm-6 col-lg-3 mb-40" data-aos="fade-up">
+                            <div class="card text-center">
+                                <div class="card-icon mx-auto color-primary mb-20">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <div class="card-content">
+                                    <span class="h2 font-medium mb-2"><span class="counter">2</span>+</span>
+                                    <p class="card-text lh-1" data-lang="countriesLabel">Foydalanuvchi mamlakatlari</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial-area start -->
+    <section class="testimonial-area ptb-100 bg-cover bg-img" data-bg-image="assets/images/testimonial-bg-2.jpg"
+        id="fikr">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="col-12">
+                    <div class="section-title title-center mb-20" data-aos="fade-up">
+                        <h2 class="title mt-0" data-lang="reviewsTitle">Bilimly uchun fikrlar</h2>
+                    </div>
+                </div>
+
+                <!-- Testimonials Slider -->
+                <div class="col-12">
+                    <div class="row justify-content-center" data-aos="fade-up">
+                        <div class="col-lg-6">
+                            <div class="swiper" id="testimonial-slider-2">
+                                <div class="swiper-wrapper">
+
+                                    <!-- Testimonial 1 -->
+                                    <div class="swiper-slide pb-10">
+                                        <div class="slider-item text-center">
+                                            <div class="quote">
+                                                <p class="text font-lg" data-lang="review1Text">
+                                                    "Bilimly App orqali qiyin mavzularni oson va qiziqarli tarzda
+                                                    o'rganish
+                                                    imkoniyatini topdim. AI Student esa bilimlarimni mustahkamlashga
+                                                    yordam
+                                                    beradi."
+                                                </p>
+                                            </div>
+                                            <div class="client-info mt-20">
+                                                <h6 class="name mb-1" data-lang="review1Name">Sarvarbek</h6>
+                                                <span class="designation font-sm"
+                                                    data-lang="review1Role">O'quvchi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Testimonial 2 -->
+                                    <div class="swiper-slide pb-25">
+                                        <div class="slider-item text-center">
+                                            <div class="quote">
+                                                <p class="text font-lg" data-lang="review2Text">
+                                                    "App juda interaktiv va intuitiv. O'rganish jarayoni tezroq va
+                                                    samaraliroq bo'ldi. AI Student bilan mustahkamlash ajoyib!"
+                                                </p>
+                                            </div>
+                                            <div class="client-info mt-20">
+                                                <h6 class="name mb-1" data-lang="review2Name">Dilnoza</h6>
+                                                <span class="designation font-sm" data-lang="review2Role">Talaba</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Testimonial 3 -->
+                                    <div class="swiper-slide pb-25">
+                                        <div class="slider-item text-center">
+                                            <div class="quote">
+                                                <p class="text font-lg" data-lang="review3Text">
+                                                    "Interaktiv darslar va AI Student kombinatsiyasi orqali eski
+                                                    o'rganilgan
+                                                    bilimlarimni eslab, yangi mavzularni tez o'zlashtirdim."
+                                                </p>
+                                            </div>
+                                            <div class="client-info mt-20">
+                                                <h6 class="name mb-1" data-lang="review3Name">Jasur</h6>
+                                                <span class="designation font-sm"
+                                                    data-lang="review3Role">O'qituvchi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Pagination -->
+                                <div class="swiper-pagination position-static" id="testimonial-slider-2-pagination">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brands Logos (agar kerak bo'lsa) -->
+        <div class="brands d-none d-lg-block">
+            <img class="lazyload blur-up" src="assets/images/placeholder.png" data-src="assets/images/slack.png"
+                alt="Brand Image">
+            <img class="lazyload blur-up" src="assets/images/placeholder.png" data-src="assets/images/messenger.png"
+                alt="Brand Image">
+            <img class="lazyload blur-up" src="assets/images/placeholder.png" data-src="assets/images/envato.png"
+                alt="Brand Image">
+            <img class="lazyload blur-up" src="assets/images/placeholder.png" data-src="assets/images/dribbble.png"
+                alt="Brand Image">
+            <img class="lazyload blur-up" src="assets/images/placeholder.png" data-src="assets/images/behance.png"
+                alt="Brand Image">
+            <img class="lazyload blur-up" src="assets/images/placeholder.png" data-src="assets/images/skype.png"
+                alt="Brand Image">
+            <img class="lazyload blur-up" src="assets/images/placeholder.png" data-src="assets/images/printerest.png"
+                alt="Brand Image">
+            <img class="lazyload blur-up" src="assets/images/placeholder.png" data-src="assets/images/telegram.png"
+                alt="Client Image">
+        </div>
+    </section>
+
+    <!-- Testimonial-area end -->
+
+    <!-- Newsletter area start -->
+    <section class="newsletter-area newsletter-3 pt-70">
+        <div class="newsletter-inner position-relative z-1 ptb-30 px-60">
+            <div class="overlay bg-gradient opacity-1"></div>
+            <div class="container">
+                <div class="row align-items-center" data-aos="fade-up">
+
+                    <!-- Content -->
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h2 class="color-white mb-30" data-lang="newsletterTitle">
+                                Bilimly ilovasini hoziroq bepul yuklab oling
+                            </h2>
+
+                            <div class="content-text w-75 w-sm-100">
+                                <p class="text color-white" data-lang="newsletterText">
+                                    Murakkab STEM va AI mavzularini interaktiv va amaliy tarzda o'rganing.
+                                    AI Student yordamida bilimlaringizni mustahkamlang va
+                                    ilovaning asosiy funksiyalarining 60%idan bepul foydalaning.
+                                </p>
+                            </div>
+
+                            <div class="btn-groups mt-30">
+                                <a href="https://apps.apple.com/ru/app/bilimly/id6756845318"
+                                    class="btn btn-img radius-md" title="App Store" target="_blank">
+                                    <img class="lazyload blur-up" src="assets/images/placeholder.png"
+                                        data-src="assets/images/app-store.png" alt="Download on the App Store">
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.bilimly.app"
+                                    class="btn btn-img radius-md" title="Play Store" target="_blank">
+                                    <img class="lazyload blur-up" src="assets/images/placeholder.png"
+                                        data-src="assets/images/play-store.png" alt="Get it on Google Play">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-lg-6">
+                        <div class="image d-none d-lg-block">
+                            <img class="lazyload blur-up" src="assets/images/placeholder.png"
+                                data-src="assets/images/newsletter-4.png" alt="Bilimly App Screenshot">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter area end -->
+
+    <div class="modal fade auth-modal" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content auth-modal-content bg-white border radius-md">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title" id="authModalLabel" data-lang="authTitle">Sign in or create an account
+                        </h5>
+                        <p class="text mb-0" data-lang="authSubtitle">Log in to buy courses or create a new account.</p>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-stretch">
+                        <div class="col-lg-5">
+                            <div class="auth-modal-aside h-100 radius-md p-4">
+                                <h4 class="title mb-15" data-lang="authIntroTitle">Start with Bilimly</h4>
+                                <p class="text mb-20" data-lang="authIntroText">
+                                    Create an account to access courses, save progress, and manage payments.
+                                </p>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex align-items-start gap-2 mb-15">
+                                        <i class="fa-solid fa-circle-check color-primary mt-1"></i>
+                                        <span data-lang="authBenefit1">Stay signed in across devices.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 mb-15">
+                                        <i class="fa-solid fa-circle-check color-primary mt-1"></i>
+                                        <span data-lang="authBenefit2">See purchase history and courses.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="fa-solid fa-circle-check color-primary mt-1"></i>
+                                        <span data-lang="authBenefit3">Get personalized updates.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="d-grid gap-3">
+                                <div id="authMessage" class="small d-none"></div>
+                                <button class="btn btn-lg btn-outline-light rounded-pill w-100 auth-google-btn"
+                                    type="button" data-lang="authGoogleBtn">Continue with Google</button>
+                                <button class="btn btn-lg btn-outline-light rounded-pill w-100 auth-apple-btn"
+                                    type="button" data-lang="authAppleBtn">
+                                    <i class="fa-brands fa-apple me-2"></i>Continue with Apple
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-area start -->
+    <footer class="footer-area bg-primary-light radius-0" id="aloqa">
+        <div class="footer-top pt-100 pb-70">
+            <div class="container">
+                <div class="row justify-content-between">
+
+                    <!-- Logo va qisqacha tavsif -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="100">
+                            <div class="navbar-brand">
+                                <a href="index.html" target="_self" title="Bilimly">
+                                    <img class="lazyload blur-up" src="assets/images/placeholder.png"
+                                        data-src="assets/images/logo/logo-5.svg" alt="Bilimly Logo">
+                                </a>
+                            </div>
+                            <p data-lang="footerAbout">
+                                Bilimly orqali qiyin STEM va AI mavzularini
+                                interaktiv va amaliy tarzda o'rganing.
+                                AI Student bilimlaringizni mustahkamlashga yordam beradi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Foydali linklar -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="200">
+                            <h5 data-lang="footerLinks">Foydali Havolalar</h5>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#" target="_self" title="Download App" data-lang="footerDownload">
+                                        App yuklab olish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/privacy-policy/" target="_self" data-lang="footerPrivacyPolicy">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/delete-account/" target="_self" data-lang="footerDeleteAccount">
+                                        Delete Account
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/docs/Bilimly_ommafiy_oferta.pdf" target="_blank"
+                                        title="Bilimly ommaviy oferta" data-lang="footerOffer">
+                                        Ommaviy oferta (PDF)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/docs/bilimly_refund_policy.pdf" target="_blank"
+                                        title="Bilimly refund policy" data-lang="footerRefund">
+                                        Pulni qaytarish siyosati (PDF)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Aloqa -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="200">
+                            <h5 data-lang="footerContact">Aloqa uchun</h5>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="mailto:mr.eldorabdukhamidov@gmail.com">Email</a>
+                                </li>
+                                <li>
+                                    <a href="http://t.me/Eldor_Abdukhamidov" target="_blank"
+                                        rel="noopener noreferrer">Telegram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- App yuklab olish -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="200">
+                            <h5 data-lang="footerAppDownload">Appni yuklab oling</h5>
+                            <div class="btn-groups">
+                                <a href="https://apps.apple.com/ru/app/bilimly/id6756845318"
+                                    class="btn btn-img radius-sm size-sm" title="App Store" target="_blank">
+                                    <img class="lazyload blur-up" src="assets/images/placeholder.png"
+                                        data-src="assets/images/app-store.png" alt="App Store">
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.bilimly.app"
+                                    class="btn btn-img radius-sm size-sm" title="Play Store" target="_blank">
+                                    <img class="lazyload blur-up" src="assets/images/placeholder.png"
+                                        data-src="assets/images/play-store.png" alt="Play Store">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Social & Copyright -->
+        <div class="copy-right-area border-top ptb-30">
+            <div class="container">
+                <div class="social-link">
+                    <a href="https://www.instagram.com/bilimly.app/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.x.com/" target="_blank" title="X (Twitter)">
+                        <i class="fab fa-x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube    "></i>
+                    </a>
+                </div>
+
+                <div class="copy-right-content mt-20">
+                    <span>
+                        © <span id="footerDate"></span>
+                        <a href="#" class="color-primary">Bilimly</a>.
+                        <span data-lang="copyright">Barcha huquqlar himoyalangan.</span>
+                    </span>
+
+                    <script>
+                        document.getElementById("footerDate").textContent = new Date().getFullYear();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("footerDate").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Footer-area end-->
+    <!-- Go to Top -->
+    <div class="go-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <!-- Go to Top -->
+    <div id="authLoading" class="auth-loading" aria-live="polite" aria-busy="true">
+        <div class="spinner" role="status" aria-label="Loading"></div>
+    </div>
+
+    <div class="a2hs-backdrop" id="a2hsBackdrop" aria-hidden="true"></div>
+    <div class="a2hs-sheet" id="a2hsSheet" role="dialog" aria-modal="true" aria-labelledby="a2hsTitle"
+        aria-describedby="a2hsDesc">
+        <div class="a2hs-handle"></div>
+        <div class="a2hs-content">
+            <div class="a2hs-header">
+                <h5 class="mb-1" id="a2hsTitle" data-lang="a2hsTitle">Add Bilimly to Home Screen</h5>
+                <button class="a2hs-close" type="button" id="a2hsClose" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <p class="text mb-3" id="a2hsDesc" data-lang="a2hsDesc">
+                Use the web version to buy courses with Uzcard and keep Bilimly one tap away.
+            </p>
+            <div class="a2hs-actions">
+                <button class="btn btn-primary bg-gradient rounded-pill w-100" type="button" id="a2hsInstallBtn"
+                    data-lang="a2hsInstallBtn">Add to Home Screen</button>
+                <button class="btn btn-outline-light rounded-pill w-100 mt-2" type="button" id="a2hsDismissBtn"
+                    data-lang="a2hsDismissBtn">Not now</button>
+            </div>
+            <div class="a2hs-ios mt-3" id="a2hsIosHelp">
+                <p class="text mb-2" data-lang="a2hsIosTitle">On iPhone/iPad:</p>
+                <div class="a2hs-step" data-lang="a2hsIosStep1">1. Tap the Share button in Safari.</div>
+                <div class="a2hs-step" data-lang="a2hsIosStep2">2. Choose “Add to Home Screen”.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS -->
+    <script src="assets/js/vendors/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Counter JS -->
+    <script src="assets/js/vendors/jquery.counterup.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/vendors/jquery.nice-select.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <!-- Lazysizes -->
+    <script src="assets/js/vendors/lazysizes.min.js"></script>
+    <!-- Twinmax JS -->
+    <script src="assets/js/vendors/tweenMax.min.js"></script>
+    <!-- Tilt JS -->
+    <script src="assets/js/vendors/tilt.jquery.min.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/js/vendors/aos.min.js"></script>
+    <!-- Main script JS -->
+    <script src="assets/js/script.js"></script>
+    <!-- Language data (local fallback for file://) -->
+    <script src="assets/js/lang-data.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+    <script src="assets/js/dist/index-page.js"></script>
+
+</body>
+
+</html>
