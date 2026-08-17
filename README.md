@@ -223,11 +223,11 @@ Bilimly-demo-code/
 
 ---
 
-## 🎥 Setup Video
+## 🎥 How to Install & Use Bilimly
 
-> Watch how to clone and run Bilimly locally in under 3 minutes.
+> Watch how to download, set up, and use Bilimly — step by step.
 
-[![Watch Setup Tutorial](https://img.shields.io/badge/▶_Watch_Setup_Tutorial-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Watch Setup Tutorial](https://img.shields.io/badge/▶_Watch_Setup_Tutorial-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/KYEoHrXr154?si=SVRNOH0iAggxbtSj)
 
 ---
 
