@@ -215,7 +215,7 @@ Bilimly-demo-code/
 
 <div align="center">
 
-| Home | Lesson | AI Roadmap | Offline |
+| Home | Ai Student | LogIn | Purchase |
 |------|--------|------------|---------|
 | <img src="https://www.bilimly.app/assets/images/screen-10.png" width="160"/> | <img src="https://www.bilimly.app/assets/images/screen-3.png" width="160"/> | <img src="https://www.bilimly.app/assets/images/screen-11.png" width="160"/> | <img src="https://www.bilimly.app/assets/images/screen-9.png" width="160"/> |
 
