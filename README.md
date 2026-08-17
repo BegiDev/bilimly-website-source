@@ -217,7 +217,7 @@ Bilimly-demo-code/
 
 | Home | Lesson | AI Roadmap | Offline |
 |------|--------|------------|---------|
-| <img src="images/screenshot-home.png" width="160"/> | <img src="images/screenshot-lesson.png" width="160"/> | <img src="images/screenshot-roadmap.png" width="160"/> | <img src="images/screenshot-offline.png" width="160"/> |
+| <img src="https://www.bilimly.app/assets/images/screen-10.png" width="160"/> | <img src="https://www.bilimly.app/assets/images/screen-3.png" width="160"/> | <img src="https://www.bilimly.app/assets/images/screen-11.png" width="160"/> | <img src="https://www.bilimly.app/assets/images/screen-9.png" width="160"/> |
 
 </div>
 
