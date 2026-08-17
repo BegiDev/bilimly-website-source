@@ -4,7 +4,7 @@
 
 # Bilimly
 
-### Learn it. Explain it. Master it.
+### Learn by doing, learn by teaching.
 
 [![App Store](https://img.shields.io/badge/App_Store-Download-0D96F6?style=for-the-badge&logo=app-store&logoColor=white)](https://apps.apple.com/app/bilimly)
 [![Google Play](https://img.shields.io/badge/Google_Play-Download-3DDC84?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=app.bilimly)
