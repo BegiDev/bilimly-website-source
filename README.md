@@ -13,7 +13,6 @@
 [![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android-blue)](#)
 [![Languages](https://img.shields.io/badge/Language-Uzbek%20%7C%20Russian%20%7C%20English-green)](#)
 [![Pricing](https://img.shields.io/badge/Pricing-One--time%20Purchase-orange)](#)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 **A mobile-first microlearning platform that teaches AI, Data Analytics, and Cybersecurity through short, structured lessons — with a personalized AI Roadmap built just for you.**
 
