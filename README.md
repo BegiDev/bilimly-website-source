@@ -292,22 +292,6 @@ This project is licensed under the **MIT License** — see [LICENSE](LICENSE) fo
 
 ---
 
-## 📬 Contact
-
-<div align="center">
-
-| Channel | Link |
-|---------|------|
-| 🌐 Website | [bilimly.app](https://bilimly.app) |
-| 📧 General | [hello@bilimly.app](mailto:hello@bilimly.app) |
-| 🛟 Support | [support@bilimly.app](mailto:support@bilimly.app) |
-| 🐦 Twitter/X | [@bilimlyapp](https://twitter.com/bilimlyapp) |
-| 💼 LinkedIn | [linkedin.com/company/bilimly](https://linkedin.com/company/bilimly) |
-
-</div>
-
----
-
 <div align="center">
 
 Built with ❤️ for learners across Central Asia
