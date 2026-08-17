@@ -30,16 +30,12 @@
 - [AI Roadmap ✨ New](#️-ai-roadmap-new)
 - [Tech Stack](#️-tech-stack)
 - [Quick Start](#-quick-start)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running Locally](#running-locally)
 - [Project Structure](#-project-structure)
 - [Screenshots](#-screenshots)
 - [Product Roadmap](#-product-roadmap)
 - [Business Model](#-business-model)
 - [Contributing](#-contributing)
 - [License](#-license)
-- [Contact](#-contact)
 
 ---
 
@@ -139,15 +135,6 @@ Languages:   Uzbek · Russian · English (i18n)
 
 ## 🚀 Quick Start
 
-### Prerequisites
-
-Before you begin, make sure you have:
-
-- [Git](https://git-scm.com/) `v2.x+`
-- A modern browser (Chrome, Firefox, Safari, Edge)
-
-### Installation
-
 **1. Clone the repository**
 
 ```bash
@@ -155,58 +142,27 @@ git clone https://github.com/BegiDev/bilimly-website-source.git
 cd bilimly-website-source
 ```
 
-**2. Launch the demo**
-
-Choose any of these methods:
+**2. Open in your browser**
 
 ```bash
-# Option A — Python (no install needed)
-python3 -m http.server 8000
-# Then open: http://localhost:8000
-```
-
-```bash
-# Option B — Node.js
-npx serve .
-# Open the URL shown in terminal
-```
-
-```bash
-# Option C — VS Code Live Server
-# Install the "Live Server" extension, then:
-# Right-click index.html → "Open with Live Server"
-```
-
-```bash
-# Option D — Open directly (simplest)
 open index.html        # macOS
 start index.html       # Windows
 xdg-open index.html    # Linux
 ```
 
-### Running Locally
-
-After launching, visit:
-
-```
-http://localhost:8000
-```
-
-You should see the Bilimly demo homepage. ✅
+That's it — no installs, no build step needed. ✅
 
 ---
 
 ## 📁 Project Structure
 
 ```
-Bilimly-demo-code/
+bilimly-website-source/
 │
-├── 📁 images/               # Logos, screenshots, and app assets
-│   └── logo.png
-│
-├── 📄 index.html            # Main entry point — open this to run the demo
-├── 🎨 favicon.ico           # App icon shown in browser tab
-└── 📖 README.md             # You are here
+├── 📁 images/          # Logos, screenshots, and app assets
+├── 📄 index.html       # Main entry point
+├── 🎨 favicon.ico      # Browser tab icon
+└── 📖 README.md        # You are here
 ```
 
 ---
@@ -215,8 +171,8 @@ Bilimly-demo-code/
 
 <div align="center">
 
-| Home | Ai Student | LogIn | Purchase |
-|------|--------|------------|---------|
+| Home | AI Student | Login | Purchase |
+|------|------------|-------|----------|
 | <img src="https://www.bilimly.app/assets/images/screen-10.png" width="160"/> | <img src="https://www.bilimly.app/assets/images/screen-3.png" width="160"/> | <img src="https://www.bilimly.app/assets/images/screen-11.png" width="160"/> | <img src="https://www.bilimly.app/assets/images/screen-9.png" width="160"/> |
 
 </div>
@@ -227,7 +183,7 @@ Bilimly-demo-code/
 
 > Watch how to download, set up, and use Bilimly — step by step.
 
-[![Watch Setup Tutorial](https://img.shields.io/badge/▶_Watch_Setup_Tutorial-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/KYEoHrXr154?si=SVRNOH0iAggxbtSj)
+[![Watch Tutorial](https://img.shields.io/badge/▶_Watch_Tutorial-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/KYEoHrXr154?si=SVRNOH0iAggxbtSj)
 
 ---
 
@@ -273,13 +229,13 @@ We welcome contributions! Here's how:
 # 2. Create your feature branch
 git checkout -b feature/your-feature-name
 
-# 3. Commit your changes (use conventional commits)
+# 3. Commit your changes
 git commit -m "feat: add your feature description"
 
 # 4. Push to your fork
 git push origin feature/your-feature-name
 
-# 5. Open a Pull Request — we'll review it promptly
+# 5. Open a Pull Request
 ```
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for our code of conduct and guidelines.
