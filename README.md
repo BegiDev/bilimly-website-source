@@ -70,6 +70,11 @@ Available in **Uzbek, Russian, and English**, Bilimly is built for learners acro
 ### 📚 Microlearning Lessons
 Each lesson delivers **one clear idea** — no fluff, no filler. Complex topics broken into small, digestible units that build on each other progressively.
 
+### 🤖 AI Student
+After every lesson, you explain what you just learned to our **AI Student**. It listens, evaluates your explanation, and scores your understanding in real time — giving you instant, personalized feedback.
+
+> *If you can teach it, you've truly learned it.*
+
 ### 🎓 Focused Course Catalog
 Deep-dive courses on the skills that matter most today:
 - 🤖 **Artificial Intelligence** — how AI works, practical applications, real-world use cases
